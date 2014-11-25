@@ -1,0 +1,60 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/box-shadow";
+ 
+$page-background-color: #f9f9f9;
+$font-gray-color: #cdcdcd;
+body {
+  background-color: $page-background-color;
+  margin: 0px;
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  .progress {
+    height: 5px;
+    width: 45%;
+    background-color: #434343;
+  }
+  .top-icon {
+    margin: 3em 3em auto 3em;
+    i {
+      display: inline-block;
+      line-height: 30px;
+      background-color: $font-gray-color;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-size: 2em;
+      color: $page-background-color;
+      text-align: center;
+      &:last-child{
+        float: right;
+      }
+    }
+  }
+  .options{
+    img{
+      width: 30em;
+      height: 30em;
+      border-radius: 50%;
+    }
+    ul{
+      li{
+        text-align: center;
+        display: inline-block;
+        a{
+          text-decoration: none;
+          font-size: 4em;
+          width: 8em;
+          height: 8em;
+          border-radius: 50%;
+          color: $font-gray-color;
+          background-color: #f6f6f6;
+
+        }
+      }
+    }
+  }
+}
