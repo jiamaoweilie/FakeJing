@@ -1,12 +1,13 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/css3/box-shadow";
- 
+
 $page-background-color: #f9f9f9;
 $font-gray-color: #cdcdcd;
 body {
   background-color: $page-background-color;
   margin: 0px;
+  height: 100%;
   font-size: 62.5%;
 }
 
@@ -18,6 +19,7 @@ body {
     background-color: #434343;
   }
   .top-icon {
+    margin: 50% auto;
     margin: 3em 3em auto 3em;
     i {
       display: inline-block;
@@ -29,30 +31,42 @@ body {
       font-size: 2em;
       color: $page-background-color;
       text-align: center;
-      &:last-child{
+      &:last-child {
         float: right;
       }
     }
   }
-  .options{
-    img{
-      width: 30em;
-      height: 30em;
-      border-radius: 50%;
+  .options {
+    div {
+      text-align: center;
+      img {
+        width: 30em;
+        height: 30em;
+        border-radius: 50%;
+      }
     }
-    ul{
-      li{
-        text-align: center;
+
+    ul {
+      width: 100%;
+      text-align: -webkit-center;
+      li {
         display: inline-block;
-        a{
+        width: 18%;
+        a {
           text-decoration: none;
+          text-align: center;
+          display: block;
+          line-height: 60px;
           font-size: 4em;
-          width: 8em;
-          height: 8em;
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           color: $font-gray-color;
-          background-color: #f6f6f6;
-
+          background-color: white;
+          @include box-shadow(rgba($font-gray-color, 0.5) 0 0 20px);
+          &:hover {
+            color: #434343;
+          }
         }
       }
     }
